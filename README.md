@@ -13,3 +13,20 @@ This is the solution:
 PPD is fixed and works.
 Filter is provided as src (you can found a list of packages need to be installed in order to build it in the header of source).
 Also, printing of blank lines is optimized.
+
+
+##Osx install:
+http://scruss.com/blog/2015/07/12/thermal-printer-driver-for-cups-linux-and-raspberry-pi-zj-58/
+
+###compile:
+cd zj-58/
+make
+
+###install
+sudo ./install
+
+###Add printer:
+go to http://localhost:631/printers
+type in terminal: cupsctl WebInterface=yes
+add printer from webinterface and select ppd from
+/etc/cups/ppd
